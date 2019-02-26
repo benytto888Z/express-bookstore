@@ -1,9 +1,6 @@
 {
   "name": "local-library",
   "version": "0.0.0",
-   "engines": {
-     "node": "10.14.2"
-  },
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www"
