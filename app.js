@@ -17,8 +17,7 @@ var app = express();
 
 var mongoose = require('mongoose');
 
-var dev_db_url = 'mongodb+srv://beni:beni@clusterdb1-lwh7w.mongodb.net/local_library?retryWrites=true';
-var mongoDB = process.env.MONGODB_URI || dev_db_url;
+var mongoDB = 'mongodb+srv://beni:beni@clusterdb1-lwh7w.mongodb.net/local_library?retryWrites=true';
 mongoose.connect(mongoDB,{ useNewUrlParser: true });
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
